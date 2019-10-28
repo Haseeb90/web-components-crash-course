@@ -1,4 +1,10 @@
 
 export default class AppToolbar extends HTMLElement {
-  // logic for your component...
+  get title() {
+    return this.getAttribute('title');
+  }
+
+  set title(value) {
+    this.setAttribute('title', value);
+  }
 }
