@@ -17,4 +17,8 @@ export default class AppToolbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = '<p>Yay! Finally something visual!</p>';
   }
+
+  disconnectedCallback() {
+    console.log('This is from the disconnectedCallback method');
+  }
 }
