@@ -1,6 +1,6 @@
 
-import AppToolbar from './toolbar-component/toolbar.component';
+import TemplateViewer from './template-viewer/template-viewer.component';
 
-if (!customElements.get('app-toolbar')) {
-  customElements.define('app-toolbar', AppToolbar);
+if (!customElements.get('template-viewer')) {
+  customElements.define('template-viewer', TemplateViewer);
 }
