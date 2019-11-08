@@ -14,8 +14,9 @@ export default class TemplateViewer extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     if (name === 'layout') {
+      this.innerHTML = '';
       const template = document.getElementById(newValue);
-      const clone = template.firstChild.cloneNode(true);
+      const clone = template.content.cloneNode(true);
       this.appendChild(clone);
     }
   }
