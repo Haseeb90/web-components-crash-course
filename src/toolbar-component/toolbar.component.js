@@ -4,4 +4,12 @@ export default class AppToolbar extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
   }
+
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `
+      <h1>
+        Im a shadow root child!
+      </h1>
+    `;
+  }
 }
