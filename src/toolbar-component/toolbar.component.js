@@ -1,4 +1,7 @@
 
 export default class AppToolbar extends HTMLElement {
-  // logic for your component...
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 }
