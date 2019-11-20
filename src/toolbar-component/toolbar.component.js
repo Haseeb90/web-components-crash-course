@@ -6,10 +6,9 @@ export default class AppToolbar extends HTMLElement {
   }
 
   connectedCallback() {
-    this.shadowRoot.innerHTML = `
-      <h1>
-        Im a shadow root child!
-      </h1>
-    `;
+    const template = document.getElementById('unique');
+    const templateClone = template.content.cloneNode(true);
+
+    this.shadowRoot.appendChild(templateClone);
   }
 }
