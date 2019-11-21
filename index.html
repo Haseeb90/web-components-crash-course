@@ -9,23 +9,30 @@
 <body>
   <div id="root">
     <app-toolbar>
-      <img slot="image" 
+      <img slot="image"
         src="https://images.unsplash.com/photo-1509281373149-e957c6296406?ixlib=rb-1.2.1&dpr=2&auto=format&fit=crop&w=416&h=312&q=60"
         width="200px">
       </img>
-      <p slot="fullName">Billy Bob Jenkins</p>
-      <p slot="email">email@email.com</p>
+      <p>Retro TV Picture</p>
+      <p>By: Photo by Ajeet Mestry on Unsplash</p>
+    </app-toolbar>
+    <hr>
+    <app-toolbar>
+      <img slot="image"
+        src="https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+        width="200px">
+      </img>
+      <p>Yellow Gameboy</p>
+      <p>By: Photo by Mike Meyers on Unsplash</p>
     </app-toolbar>
 
     <template id="unique">
       <div class="container">
+        <h3>This heading will always be displayed</h3>
         <div class="circle">
           <slot name="image">image</slot>
         </div>
-        <div class="name-container">
-          <slot name="fullName">Full name goes here</slot>
-          <slot name="email">User email goes here</slot>
-        </div>
+        <slot class="content-container"></slot>
       </div>
     </template>
   </div>
