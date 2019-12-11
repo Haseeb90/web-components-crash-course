@@ -5,4 +5,4 @@ Part 1 (Custom Elements): https://medium.com/javascript-in-plain-english/web-com
 
 Part 2 (Templates): https://medium.com/javascript-in-plain-english/web-components-crash-course-b0a2feb11be1
 
-Part 3 (Shadow DOM): To be published
+Part 3 (Shadow DOM): https://medium.com/javascript-in-plain-english/web-components-crash-course-shadow-dom-803183fcfabc
